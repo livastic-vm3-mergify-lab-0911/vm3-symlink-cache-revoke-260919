@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM3 old weak symlink policy
+    conditions:
+      - author = livastic-vm3-secondary-20260911
+      - title = VM3 SYMLINK CACHE OLD POLICY 260919
+      - check-success = vm3-symlink-cache-gate
+    actions:
+      merge:
+        method: merge
